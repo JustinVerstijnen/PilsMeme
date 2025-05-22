@@ -1,1 +1,28 @@
-<p><img src="https://raw.githubusercontent.com/JustinVerstijnen/PilsMeme/refs/heads/main/beer-10.gif" alt="" width="1500" height="900" /></p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fullscreen GIF</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background: black; /* optioneel, maakt de achtergrond donker */
+    }
+    .fullscreen-gif {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover; /* zorgt dat het hele scherm gevuld wordt zonder witruimte */
+      z-index: 9999;
+    }
+  </style>
+</head>
+<body>
+  <img src="https://raw.githubusercontent.com/JustinVerstijnen/PilsMeme/refs/heads/main/beer-10.gif" alt="Fullscreen GIF" class="fullscreen-gif">
+  <p>This beer is made possible by <a href="https://justinverstijnen.nl">Justin Verstijnen</a>.</p>
+</body>
+</html>
